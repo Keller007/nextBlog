@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
+import { FaMoon, FaSun } from "react-icons/fa";
 import { useTheme } from "next-themes";
-import { FaSun, FaMoon } from "react-icons/fa";
 
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false);
@@ -21,11 +21,14 @@ const ThemeSwitch = () => {
     <>
       {isActive ? (
         <FaSun
-          className="hover:text-accent h-8 w-8 text-zinc-800"
+          className="h-8 w-8 text-zinc-800 hover:text-accent"
           onClick={() => setTheme("dark")}
         />
       ) : (
-        <FaMoon onClick={() => setTheme("light")} />
+        <FaMoon
+          className="h-6 w-6 text-zinc-400 hover:text-accent "
+          onClick={() => setTheme("light")}
+        />
       )}
     </>
   );

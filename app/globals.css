@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-	--color-accent: #df3554;
+	--color-accent: #e52b50;
+	/* Amaranth */
 }
 
 @media (prefers-color-scheme: dark) {

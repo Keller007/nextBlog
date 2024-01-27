@@ -7,9 +7,21 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
-    colors: {
-      accent: "var(--color-accent)",
+    fontFamily: {
+      sans: [
+        "var(--font-inter)",
+        "-apple-system",
+        "BlinkMacSystemFont", 
+        "Roboto",
+        "Helvetica",
+        "Arial",
+        "sans-serif",
+      ],
+    },
+    extend: {
+      colors: {
+        accent: "var(--color-accent)",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],

@@ -1,12 +1,15 @@
+import clsx from "clsx";
 import type { Metadata } from "next";
-import Footer from "./components/Footer";
 import { Inter } from "next/font/google";
-import "./globals.css";
 
 import ThemeProvider from "@/lib/hooks/ThemeProvider";
-import ThemeSwitcher from "@/app/components/ThemeSwitcher";
 
-const inter = Inter({ subsets: ["latin"] });
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+
+import "./globals.css";
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   title: "Next App2!",
@@ -21,12 +24,18 @@ export default function RootLayout({
   return (
     <html
       lang="ru"
-      className="scroll-pt-16 scroll-smooth"
+      className={clsx(
+        "scroll-pt-16 scroll-smooth",
+        inter.variable,
+        "antialiased",
+      )}
       suppressHydrationWarning
     >
-      <body className="   ">
+      <body className="">
         <ThemeProvider>
-          <ThemeSwitcher />
+          <header className="sticky top-0 z-50 col-span-3 row-span-1 row-start-1">
+            <Header />
+          </header>
           {children}
           <footer className="col-span-3 row-span-1 row-start-3">
             <Footer />
