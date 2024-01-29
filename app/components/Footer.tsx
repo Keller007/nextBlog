@@ -1,5 +1,7 @@
 import Link from "next/link";
-import {socials} from "../../lib/const";
+
+import { socials } from "../../lib/const";
+
 import { Copyright } from "./Copyright";
 
 export default function Footer() {
@@ -26,7 +28,7 @@ export default function Footer() {
       <div className="flex h-6 flex-row items-center justify-center space-x-1 text-zinc-600 dark:text-zinc-300">
         <Copyright className="h-3 w-3" />
         <span className="text-xs">
-          {new Date().getFullYear()} · Andrey
+          {new Date().getFullYear()} · Andrey Pirogov
         </span>
       </div>
     </div>

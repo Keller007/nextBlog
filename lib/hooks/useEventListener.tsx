@@ -1,5 +1,3 @@
-import React from "react";
-
 import { useEffect, useState } from "react";
 export const useEventListener = () => {
   const [scrollTop, setScrollTop] = useState(0);

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   authors: [{ name: "AndreyPirogov", url: "https://github.com/Keller007" }],
   creator: "AndreyPirogov",
   publisher: "AndreyPirogov",
-  //   !
+  //     image: "https://github.com/Keller007.png",
   icons: {
     icon: [
       { url: "/assets/icon-512x512.png", sizes: "512x512" },
@@ -72,7 +72,7 @@ export default function RootLayout({
       )}
       suppressHydrationWarning
     >
-      <body className="">
+      <body className="grid-rows-layout sm:grid-cols-layout grid min-h-screen grid-cols-1 bg-slate-100 dark:bg-zinc-900">
         <ThemeProvider>
           <header className="sticky top-0 z-50 col-span-3 row-span-1 row-start-1">
             <Header />
