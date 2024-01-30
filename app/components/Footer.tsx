@@ -19,15 +19,15 @@ export default function Footer() {
           >
             {icon({
               className:
-                "h-8 w-8 text-zinc-900 hover:text-accent dark:text-zinc-100 dark:hover:text-accent",
+                "h-8 w-8 xl:h-10 xl:w-10 text-zinc-900 hover:text-accent dark:text-zinc-100 dark:hover:text-accent",
             })}
           </Link>
         ))}
       </div>
 
       <div className="flex h-6 flex-row items-center justify-center space-x-1 text-zinc-600 dark:text-zinc-300">
-        <Copyright className="h-3 w-3" />
-        <span className="text-xs">
+        <Copyright className="h-3 w-3 xl:h-4  xl:w-4 " />
+        <span className="text-xs xl:text-sm">
           {new Date().getFullYear()} · Andrey Pirogov
         </span>
       </div>

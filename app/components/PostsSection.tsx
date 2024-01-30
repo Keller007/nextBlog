@@ -13,7 +13,7 @@ export async function PostsSection() {
 
   return (
     <section className="flex flex-col space-y-2 text-zinc-900 dark:text-zinc-50">
-      <h2 className="inline-flex items-center justify-between border-b text-xl font-semibold dark:border-zinc-700 sm:text-2xl">
+      <h2 className="relative inline-flex items-center justify-between border-b text-xl font-semibold dark:border-zinc-700 sm:text-2xl">
         Latest Posts{" "}
         <Link
           href="/posts"

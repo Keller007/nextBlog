@@ -8,7 +8,7 @@ function Header() {
   return (
     <div
       className={clsx(
-        "flex items-center justify-between px-4  text-zinc-700 backdrop-blur transition-[padding,background-color] duration-300 ease-in-out dark:text-zinc-50 sm:px-8",
+        "flex items-center justify-between px-4  text-zinc-700  transition-[padding,background-color] duration-300 ease-in-out dark:text-zinc-50 sm:px-8",
         useEventListener() ? "bg-slate-200/10 py-4" : "bg-transparent  py-8 ",
       )}
     >
@@ -28,3 +28,4 @@ function Header() {
 }
 
 export default Header;
+// backdrop-blur

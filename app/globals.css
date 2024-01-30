@@ -4,16 +4,32 @@
 
 :root {
 	--color-accent: #e52b50;
-	/* Amaranth */
+	--color-bg: rgba(246, 249, 251, 0.10);
+	--color-text: rgba(10, 10, 10, 0.50);
+
 }
 
-@media (prefers-color-scheme: dark) {
+.light {
+	--color-bg: rgba(246, 249, 251, 0.10);
+	--color-bg-text: rgba(10, 10, 10, 0.50);
+}
+
+.dark {
+	--color-bg: rgba(10, 10, 10, 0.50);
+	--color-bg-text: "#0aff0a";
+}
+
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* @media (prefers-color-scheme: dark) {
 	:root {
-		--color-accent: #df3554;
+		--color-accent: #95df35;
+		--color-bg: rgba(10, 10, 10, 0.50);
+		--color-bg-text: "#0aff0a";
 	}
-}
-
-/* 
-body {
-	color: rgb(var(--foreground-rgb));
 } */
+ 
